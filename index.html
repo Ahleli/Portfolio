@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Sevices</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Data Enthusiast.</p>
+                <h1>Hi, I am Ahleli<br> Pilingane from South Africa.</h1>
+
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------------------------------------about------------------------------------------------------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Myself.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am Ahleli Pilingane, a final year BSc in Information Technology student at the North West University. I am an individual who is passionate about technology, innovation and solving problems. I am mostly passionate in areas such as data engineering, cyber security and artificial intelligence. Through my academic life, I have learned valuable skills such as Java, Python, C++, SQL and Data structures.</p>
+
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Languages</span><br>Python, Java, C++, C#</li>
+                            <li><span>Core Concepts</span><br>Data Structures and Algorithms, OOP, Computer Networking</li>
+                            <li><span>Developer Tools</span><br>PyCharm, Codeblocks, BlueJ, Visual Studio, VS Code, Excel, Oracle SQL, Cisco Packet Tracer</li>
+                            <li><span>Libraries</span><br>Pandas, NumPy, Matplotlib</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2024-2025</span><br>Chairperson for the Faculty of Natural and Agricultural Sciences Student Academic Chapter (Vanderbijlpark Campus)</li>
+                            <li><span>2024-2025</span><br>Statistics Tutor</li>
+                            <li><span>2023-2024</span><br>Academic Officer for the Faculty of Natural and Agricultural Sciences Student Academic Chapter ( Vanderbijlpark Campus)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2023-2026</span><br>BSc Information Technology from North West University</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------------------------services-------------------------------------------------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I create the visual layout, user interface, and overall user experience of websites. I focus on how the site looks, feels, and functions by planning navigation, selecting colour palettes, designing graphics, and ensuring the website is intuitive and accessible across all devices.</p>
+                
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Computer Networking</h2>
+                    <p>I design, build, and maintain communication networks that allow devices to share data and connect to the internet. I configure hardware like routers and switches and monitor perfomance, and enforce security protocols to keep organizational systems running smoothly and protected from cyber threats.</p>
+                    
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Data Engineering</h2>
+                    <p>I build the infrastructure, systems, and pipelines that collect, store, and transform raw data so that data scientists and analysts can use it to drive business decisions.</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------Portfolio--------------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/UserInterface.jpg">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from playstore.</p>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Packet Tracer.png">
+                    <div class="layer">
+                        <h3>Networking</h3>
+                        <p>This is the connectivity of all devices across multiple rooms in the building.</p>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-------------------------------Contact----------------------------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> ahlelipilingane@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 0717161079</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/ahleli-pilingane-0609a5280"><i class="fa-brands fa-linkedin"><img srs="images/linkedin.png" alt="linkedin" style="height:10%; width:10%;"></i></a>
+                        <a href="https://github.com/Ahleli"><i class="fa-brands fa-github"><img srs="images/github.png" alt="github" style="height: 10%; width:10%;"></i></a>
+                    </div>
+                    <a href="images/AHLELI PILINGANE Data Engineer CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Ahleli Pilingane</p>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+    </body>
+</html>
